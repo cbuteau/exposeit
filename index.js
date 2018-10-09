@@ -27,10 +27,16 @@ function findFunctions(obj, keys) {
 
 function createInterface(obj, def) {
   var newwrapper = {};
-  var defKeys = Object.keys(def);
-  var defFuncs = findFunctions(obj, defKeys);
   var keys = Object.keys(obj);
   var funcKeys = findFunctions(obj, keys);
+  if (def) {
+    var defKeys = Object.keys(def);
+    var defFuncs = findFunctions(obj, defKeys);
+  } else {
+    var defFuncs = funcKeys.filter(function(key) {
+      return !key.startsWith('_');
+    });
+  }
   iterate(defFuncs, function(key) {
     var func = obj[key];
 
@@ -39,14 +45,16 @@ function createInterface(obj, def) {
     if (funcKeys.indexOf(key) !== -1) {
       newwrapper[key] = function() {
         return func.apply(obj, arguments);
-      };      
+      };
     }
   });
 
   return newwrapper;
 }
 
-
-module.exports = {
-  create: createInterface
-};
+// if we think of more utilities to expose we will...
+module.exports = createInterface;
+//
+// module.exports = {
+//   create: createInterface
+// };

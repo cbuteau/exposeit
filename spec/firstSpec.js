@@ -1,5 +1,5 @@
 
-var jint = require('..');
+var callconv = require('..');
 
 var testObj = {
   _data: [],
@@ -28,7 +28,7 @@ var proxy;
 
 describe('First Tests', function() {
   beforeAll(function() {
-    proxy = jint.create(testObj, objDef);
+    proxy = callconv(testObj, objDef);
   });
 
   afterEach(function() {

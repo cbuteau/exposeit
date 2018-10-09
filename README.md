@@ -26,6 +26,6 @@ Create a redirector that only exposes the functions you want to expose.
 
 ## Plan
 
-First Step Node JS module with tests.
-Second Step WEb Lib also with seperate tests (separate jasmine config)
-Third Step Publish
++ [ ] First Step Node JS module with tests.
++ [ ] Second Step WEb Lib also with + [ + + [ ] Separate tests (separate jasmine config)
++ [ ] Third Step Publish
