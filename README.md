@@ -1,24 +1,24 @@
 
-# callconv
+# exposeit
 
 ## Abstract
 
 I wanted to build a library for building interfaces but jint and interface was taken.
-SO it became callconv.
+SO it became callconv....then exposeit...
 
 ## Badges/Status
 
 Travis
 
-[![Build Status](https://travis-ci.org/cbuteau/jsigs.svg?branch=master)](https://travis-ci.org/cbuteau/callconv)
+[![Build Status](https://travis-ci.org/cbuteau/exposeit.svg?branch=master)](https://travis-ci.org/cbuteau/exposeit)
 
 npm Version
 
-[![npm version](http://img.shields.io/npm/v/chalkproxy.svg?style=flat)](https://npmjs.org/package/callconv "View this project on npm")
+[![npm version](http://img.shields.io/npm/v/exposeit.svg?style=flat)](https://npmjs.org/package/exposeit "View this project on npm")
 
 npm big badge
 
-[![NPM](https://nodei.co/npm/callconv.png)](https://nodei.co/npm/callconv/)
+[![NPM](https://nodei.co/npm/exposeit.png)](https://nodei.co/npm/exposeit/)
 
 ## Goal
 
