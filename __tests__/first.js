@@ -24,25 +24,25 @@ var objDef = {
   sum: function() {}
 };
 
-var proxy;
+var proxy = callconv(testObj, objDef);
 
 describe('First Tests', function() {
-  beforeAll(function() {
-    proxy = callconv(testObj, objDef);
-  });
+  // beforeAll(function() {
+  //   proxy = callconv(testObj, objDef);
+  // });
 
   afterEach(function() {
     testObj._clear();
   });
 
-  it ('Create', function() {
+  test ('Create', function() {
     //var proxy = jint.create(testObj, objDef);
     proxy.append(10);
     proxy.append(20);
     expect(proxy.sum()).toBe(30);
   });
 
-  it ('Check exposure', function() {
+  test ('Check exposure', function() {
     //var proxy = jint.create(testObj, objDef);
     proxy.append(10);
     proxy.append(20);

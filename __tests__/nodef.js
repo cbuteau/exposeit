@@ -24,7 +24,7 @@ function createComplex() {
 
 describe('No Definitions', function() {
 
-  it ('TRy without def', function() {
+  test ('TRy without def', function() {
     var proxy = callconv(createComplex());
   });
 
