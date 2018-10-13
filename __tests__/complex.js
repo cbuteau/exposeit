@@ -27,7 +27,7 @@ var compDef = {
 };
 
 describe('Complex Object', function() {
-  it ('Complex One', function() {
+  test ('Complex One', function() {
     var proxy = callconv(createComplex(), compDef);
     proxy.store('one', 1);
     proxy.store('two', 2);
