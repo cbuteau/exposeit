@@ -28,4 +28,6 @@ Create a redirector that only exposes the functions you want to expose.
 
 + [x] First Step Node JS module with tests.
 + [ ] Second Step WEb Lib also with Separate tests (separate jasmine config)
-+ [ ] Third Step Publish
++ [ ] Third Step
+
+https://itnext.io/testing-your-javascript-in-a-browser-with-jest-puppeteer-express-and-webpack-c998a37ef887
