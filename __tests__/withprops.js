@@ -42,6 +42,7 @@ describe('Complex Object', function() {
     expect(proxy.numProp).toBe(6.57);
     proxy.numPropInt = 300;
     expect(proxy.numPropInt).toBe(300);
+    expect(proxy._dict).toBe(undefined);
   });
 
 })
