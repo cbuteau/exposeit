@@ -85,33 +85,6 @@ function createInterface(obj, def) {
 
 
 
-function createInterfaceOld(obj, def) {
-  var newwrapper = {};
-  var keys = Object.keys(obj);
-  var funcKeys = findFunctions(obj, keys);
-  if (def) {
-    var defKeys = Object.keys(def);
-    var defFuncs = findFunctions(obj, defKeys);
-  } else {
-    var defFuncs = funcKeys.filter(function(key) {
-      return !key.startsWith('_');
-    });
-  }
-  iterate(defFuncs, function(key) {
-    var func = obj[key];
-
-    console.log('name: ' + key + ' params:' + func.length);
-
-    if (funcKeys.indexOf(key) !== -1) {
-      newwrapper[key] = function() {
-        return func.apply(obj, arguments);
-      };
-    }
-  });
-
-  return newwrapper;
-}
-
 // if we think of more utilities to expose we will...
 if (typeof module !== undefined && typeof module.exports !== undefined) {
   module.exports = createInterface;

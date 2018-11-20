@@ -1,4 +1,4 @@
-var callconv = require('..');
+var exposeit = require('..');
 
 function createComplex() {
   return {
@@ -31,7 +31,7 @@ var compDef = {
 
 describe('Complex Object', function() {
   test ('Complex One', function() {
-    var proxy = callconv(createComplex(), compDef);
+    var proxy = exposeit(createComplex(), compDef);
     proxy.store('one', 1);
     proxy.store('two', 2);
     expect(proxy.get('one')).toBe(1);

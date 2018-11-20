@@ -1,6 +1,6 @@
 
 
-var callconv = require('..');
+var exposeit = require('..');
 
 function createComplex() {
   return {
@@ -25,7 +25,7 @@ function createComplex() {
 describe('No Definitions', function() {
 
   test ('TRy without def', function() {
-    var proxy = callconv(createComplex());
+    var proxy = exposeit(createComplex());
   });
 
 });

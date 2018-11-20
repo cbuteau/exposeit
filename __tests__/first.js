@@ -1,5 +1,5 @@
 
-var callconv = require('..');
+var exposeit = require('..');
 
 var testObj = {
   _data: [],
@@ -24,7 +24,7 @@ var objDef = {
   sum: function() {}
 };
 
-var proxy = callconv(testObj, objDef);
+var proxy = exposeit(testObj, objDef);
 
 describe('First Tests', function() {
   // beforeAll(function() {
