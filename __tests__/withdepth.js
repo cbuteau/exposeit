@@ -9,6 +9,7 @@ var createComplexDepth = function createComplex() {
     callbacks: {
       onComplete: function() {},
       onError: function() {},
+      onSpecial: function(){}
     }
   }
 };
@@ -31,5 +32,9 @@ describe('Exposure exposes nested interface exposure', function() {
     expect(proxy.flags.proChoice).toBe(true);
     expect(proxy.flags.proGovt).toBe(true);
     expect(proxy.flags.proHillary).toBeUndefined(true);
+
+    expect(proxy.callbacks.onComplete).not.toBeUndefined();
+    expect(proxy.callbacks.onError).not.toBeUndefined();
+    expect(proxy.callbacks.onSpecial).toBeUndefined();
   });
 });
