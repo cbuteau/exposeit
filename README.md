@@ -8,15 +8,16 @@ SO it became callconv....then exposeit...
 
 ## Badges/Status
 
-Travis
 
-[![Build Status](https://travis-ci.org/cbuteau/exposeit.svg?branch=master)](https://travis-ci.org/cbuteau/exposeit)
+### Circle CI Build
 
-npm Version
+[![CircleCI](https://circleci.com/gh/cbuteau/typecodes.svg?style=svg)](https://circleci.com/gh/cbuteau/typecodes)
+
+### npm Version
 
 [![npm version](http://img.shields.io/npm/v/exposeit.svg?style=flat)](https://npmjs.org/package/exposeit "View this project on npm")
 
-npm big badge
+### npm big badge
 
 [![NPM](https://nodei.co/npm/exposeit.png)](https://nodei.co/npm/exposeit/)
 
