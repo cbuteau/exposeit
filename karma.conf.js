@@ -15,6 +15,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      './node_modules/typecodes/typecodes.js',
       'index.js',
       '__tests__/**/*.js'
     ],

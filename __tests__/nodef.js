@@ -2,7 +2,7 @@
 
 
 
-function createComplex() {
+function createComplexNoDef() {
   return {
     _dict: {},
     store: function(key, value) {
@@ -25,7 +25,7 @@ function createComplex() {
 describe('No Definitions', function() {
 
   it ('TRy without def', function() {
-    var proxy = exposeit(createComplex());
+    var proxy = exposeit(createComplexNoDef());
   });
 
 });

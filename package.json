@@ -6,7 +6,7 @@
   "scripts": {
     "test": ".\\node_modules\\.bin\\karma start",
     "test.ci": ".\\node_modules\\.bin\\karma start --single-run",
-    "debug": "node --inspect-brk node_modules/jasmine/bin/jasmine.js"    
+    "debug": "node --inspect-brk node_modules/jasmine/bin/jasmine.js"
   },
   "keywords": [
     "interface"
@@ -20,6 +20,7 @@
     "karma": "4.1.0",
     "karma-chrome-launcher": "2.2.0",
     "karma-cli": "2.0.0",
-    "karma-jasmine": "2.0.1"
+    "karma-jasmine": "2.0.1",
+    "typecodes": "1.0.0"
   }
 }
