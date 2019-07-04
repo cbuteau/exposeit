@@ -86,13 +86,8 @@ function createInterface(obj, def) {
 
 
 // if we think of more utilities to expose we will...
-if (typeof module !== undefined && typeof module.exports !== undefined) {
-  module.exports = createInterface;
-} else {
+if (window && window.performance) {
   window.exposeit = createInterface;
+} else {
+  module.exports = createInterface;
 }
-//module.exports = createInterface;
-//
-// module.exports = {
-//   create: createInterface
-// };
