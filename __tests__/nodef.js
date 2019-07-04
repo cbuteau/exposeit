@@ -1,6 +1,6 @@
 
 
-var exposeit = require('..');
+
 
 function createComplex() {
   return {
@@ -24,7 +24,7 @@ function createComplex() {
 
 describe('No Definitions', function() {
 
-  test ('TRy without def', function() {
+  it ('TRy without def', function() {
     var proxy = exposeit(createComplex());
   });
 

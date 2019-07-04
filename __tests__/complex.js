@@ -1,5 +1,5 @@
 
-var exposeit = require('..');
+
 
 function createComplex() {
   return {
@@ -27,7 +27,7 @@ var compDef = {
 };
 
 describe('Complex Object', function() {
-  test ('Complex One', function() {
+  it ('Complex One', function() {
     var proxy = exposeit(createComplex(), compDef);
     proxy.store('one', 1);
     proxy.store('two', 2);

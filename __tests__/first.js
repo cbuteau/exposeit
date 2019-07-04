@@ -1,5 +1,5 @@
 
-var exposeit = require('..');
+
 
 var testObj = {
   _data: [],
@@ -35,14 +35,14 @@ describe('First Tests', function() {
     testObj._clear();
   });
 
-  test ('Create', function() {
+  it ('Create', function() {
     //var proxy = jint.create(testObj, objDef);
     proxy.append(10);
     proxy.append(20);
     expect(proxy.sum()).toBe(30);
   });
 
-  test ('Check exposure', function() {
+  it ('Check exposure', function() {
     //var proxy = jint.create(testObj, objDef);
     proxy.append(10);
     proxy.append(20);
