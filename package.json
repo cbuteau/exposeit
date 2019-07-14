@@ -13,7 +13,9 @@
   ],
   "author": "Christopher W Buteau <cbuteau@gmail.com>",
   "license": "MIT",
-  "devDependencies": {},
+  "devDependencies": {
+    "lodash": "4.17.14"
+  },
   "dependencies": {
     "jasmine": "3.4.0",
     "jasmine-core": "3.4.0",
