@@ -6,7 +6,8 @@
   "scripts": {
     "test": ".\\node_modules\\.bin\\karma start",
     "test.ci": ".\\node_modules\\.bin\\karma start --single-run",
-    "debug": "node --inspect-brk node_modules/jasmine/bin/jasmine.js"
+    "debug": "node --inspect-brk node_modules/jasmine/bin/jasmine.js",
+    "preinstall": "npx npm-force-resolutions"
   },
   "keywords": [
     "interface"
@@ -14,7 +15,12 @@
   "author": "Christopher W Buteau <cbuteau@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "lodash": "4.17.14"
+    "lodash": "4.17.14",
+    "minimist": "^1.2.5",
+    "optimist": "^0.6.1"
+  },
+  "resolutions": {
+    "minimist": "^1.2.5"
   },
   "dependencies": {
     "jasmine": "3.4.0",
