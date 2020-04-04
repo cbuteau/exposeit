@@ -11,7 +11,7 @@ SO it became callconv....then exposeit...
 
 ### Circle CI Build
 
-[![CircleCI](https://circleci.com/gh/cbuteau/typecodes.svg?style=svg)](https://circleci.com/gh/cbuteau/typecodes)
+[![CircleCI](https://circleci.com/gh/cbuteau/exposeit.svg?style=svg)](https://circleci.com/gh/cbuteau/exposeit)
 
 ### npm Version
 
