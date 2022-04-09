@@ -16,7 +16,7 @@
   "license": "MIT",
   "devDependencies": {
     "lodash": "4.17.14",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "optimist": "^0.6.1"
   },
   "resolutions": {
